@@ -1,4 +1,6 @@
+import ProductList from "@/components/shared/product/product-list";
 import { Button } from "@/components/ui/button";
+import sampleData from "@/db/sample-data";
 
 // export const metadata ={
 //   title: 'Home',
@@ -9,8 +11,7 @@ import { Button } from "@/components/ui/button";
 const HomePage = async () => {
   return(
     <>
-      HomePage
-      <Button>Click me</Button>
+      <ProductList data={sampleData.products} title="Newest Arrivals" limit={4}/>
    </>
   )
 }
